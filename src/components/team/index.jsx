@@ -2,8 +2,10 @@ import React from 'react'
 import Learn_btn from '../../assets/icons/Learn_btn'
 import Twitter from '../../assets/icons/Twitter'
 
-const TeamContainer = ({name,title,desc,img,links})=> {
-
+const TeamContainer = ({name,title,desc,img,url})=> {
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      };
     return(
       <div style={{width:"200px", height:500, display:"flex", flexDirection:"column", background:'#fff',
     padding:20, boxSizing:"border-box", justifyContent:"space-between", borderRadius:20,
@@ -16,10 +18,12 @@ const TeamContainer = ({name,title,desc,img,links})=> {
           background:'#fff',
           alignSelf:"center",
           borderRadius:"50%",
-          boxShadow: '1px' ,
+        //   boxShadow: '1px' ,
      boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)',
 
-      }} src = {img}/>
+      }} src = {img} 
+      alt={""}
+      />
       </div>
 
             <div style={{
@@ -30,16 +34,19 @@ const TeamContainer = ({name,title,desc,img,links})=> {
             }}>
         <text style={{
             fontSize:"20px",
-            fontWeight:"bold"
+            fontWeight:"bold",
+             fontFamily:'cairo'
         }}>{name}</text>
 
         <text  style={{
             fontSize:"20px",
             marginTop:"10px"
+            , fontFamily:'cairo'
         }}>{title}</text>
         <p style={{
             fontSize:"10px",
             marginTop:"10px"
+            , fontFamily:'cairo'
         }}>{desc}</p>
       </div>
 
@@ -50,8 +57,10 @@ const TeamContainer = ({name,title,desc,img,links})=> {
                       justifyContent:"center"
 
                   }}>
-          
-                      <Twitter curser={"pointer"}/>
+          <div onClick={() => openInNewTab("www.google.com")}  style={{ width:40, height:40}}>
+          <Twitter  curser={"pointer"}/>
+          </div>
+                     
     
 
       </div>

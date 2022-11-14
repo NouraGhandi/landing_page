@@ -6,18 +6,16 @@ import AIcon from './assets/icons/AIcon';
 import RIcon from './assets/icons/RIcon';
 import Background from './assets/icons/Background';
 import Logoyellow from './assets/icons/Logoyellow';
-// import Rocket from './assets/icons/Rocket';
-// import RocketComponent from './components/rocket-container';
 import TeamContainer from './components/team';
 import Nouri from './assets/icons/Noura.jpg';
 import Raghad from './assets/icons/Raghad.jpg';
 import Farah from './assets/icons/Farah.jpg';
 import Shatha from './assets/icons/Shatha.jpg';
 import Lujain from './assets/icons/Lujain.jpg';
+import Maha from './assets/icons/Maha.JPG';
 import SiwarVid from './assets/icons/SiwarVid.mp4';
 import AirplaneIcon from './assets/icons/AirplaneIcon';
-// import CircleBlue from './assets/icons/CircleBlue';
-
+import "@fontsource/cairo";
 function App() {
   return (
   
@@ -42,11 +40,11 @@ function App() {
       display:'flex',
       flexDirection:'row-reverse'
     }}>
-  <a style={{fontSize: 18,  color:'white', marginRight: 50}} href={'#about'}>من نحن؟</a>
+  <a style={{fontSize: 18,  color:'white', marginRight: 50, fontFamily:'cairo'}} href={'#about'}>من نحن؟</a>
   
-  <a style={{fontSize: 18,  color:'white',marginRight: 50 }} href={'#try'}>التجربة</a>
-  <a style={{fontSize: 18,  color:'white', marginRight: 50}} href={'#about'}>الميزات</a>
-  <a style={{fontSize: 18,  color:'white', marginRight: 50}} href={'#team'}>الفريق</a>
+  <a style={{fontSize: 18,  color:'white',marginRight: 50, fontFamily:'cairo' }} href={'#try'}>التجربة</a>
+  <a style={{fontSize: 18,  color:'white', marginRight: 50, fontFamily:'cairo'}} href={'#about'}>الميزات</a>
+  <a style={{fontSize: 18,  color:'white', marginRight: 50, fontFamily:'cairo'}} href={'#team'}>الفريق</a>
  
    
     </div>
@@ -58,15 +56,21 @@ function App() {
       alignItems: 'center',
     
     }}>
-  <p style={{fontSize: 18, textAlign: 'center', color:'white'}} id={'try'}>لعبة تأخذك في جولات وتحديات مختلفة من  <br/>المستقبل وتساعدك لتتعلم حماية خصوصية<br/> في الانترنت</p>
-  <button style={{width:150, height: 50,  marginLeft: 120, background:'#4BBD9B', color:'white', borderColor:'#4BBD9B', borderRadius:12,  fontSize:20, boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)' }} >اطلب تجربة</button>
+  <p style={{fontSize: 18, textAlign: 'center', color:'white', fontFamily:'cairo'}} id={'try'}>لعبة تأخذك في جولات وتحديات مختلفة من  <br/>المستقبل وتساعدك لتتعلم حماية خصوصية<br/> في الانترنت</p>
+  <button style={{width:150, height: 50,  marginLeft: 120, background:'#4BBD9B', color:'white', borderColor:'#4BBD9B', borderRadius:12,  fontSize:20, boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)', fontFamily:'cairo' }} onClick={() =>
+          window.open(
+            "https://docs.google.com/forms/d/e/1FAIpQLSfFiMYqDMF-FGddcYrwz7ouuWFONuy11LqyKEFaFeBzDwKK3Q/viewform",
+            "_blank",
+            "noopener, noreferrer"
+          )
+        } >اطلب تجربة</button>
     </div>
   
   
   </div>
   <div style={{width:'full',height:'full',  }} id={'about'} >
-  <p style={{textAlign:'center',fontSize:40, fontWeight:'bolder'}}>نعلم الاطفال الخصوصية</p>
-  <p style={{textAlign:'center',fontSize:20, }}>هدفنا في لعبة سوار أن نعلم الاطفال كيف يتعاملون مع خصوصية بياناتهم ويحفظونها<br/> 
+  <p style={{textAlign:'center',fontSize:40, fontWeight:'bolder', fontFamily:'cairo'}}>نعلم الاطفال الخصوصية</p>
+  <p style={{textAlign:'center',fontSize:20, fontFamily:'cairo' }}>هدفنا في لعبة سوار أن نعلم الاطفال كيف يتعاملون مع خصوصية بياناتهم ويحفظونها<br/> 
   وذلك ضمن لعبة مصممة لتحقق الفائدة والمتعة في آن واحد</p>
   </div>
 
@@ -75,26 +79,26 @@ function App() {
     <div style={{width:'25%', flexDirection:'row-reverse', display:'flex',justifyContent:'center',}}>
     <RIcon/>
   <div style={{display:'flex', flexDirection:'column', marginRight:30, }}>
-    <h1 style={{textAlign:'end', }}>راشد</h1>
-    <h5 style={{textAlign:'end', marginTop:0}}>في اتخاذ القرارات <br/> المتعلقة بخصوصيتي</h5>
+    <h1 style={{textAlign:'end', fontFamily:'cairo' }}>راشد</h1>
+    <h5 style={{textAlign:'end', marginTop:0 , fontFamily:'cairo'}}>في اتخاذ القرارات <br/> المتعلقة بخصوصيتي</h5>
   </div>
     </div>
     <div style={{width:'25%',flexDirection:'row-reverse', display:'flex',justifyContent:'center',}}><AIcon/>
   <div style={{display:'flex', flexDirection:'column', marginRight:30, }}>
-    <h1 style={{textAlign:'end', }}>أحترم</h1>
-    <h5 style={{textAlign:'end', marginTop:0}}>خصوصية الاخرين في <br/>عالم الانترنت</h5>
+    <h1 style={{textAlign:'end', fontFamily:'cairo' }}>أحترم</h1>
+    <h5 style={{textAlign:'end', marginTop:0 , fontFamily:'cairo'}}>خصوصية الاخرين في <br/>عالم الانترنت</h5>
   </div>
   </div>
     <div style={{width:'25%', flexDirection:'row-reverse', display:'flex',justifyContent:'center',}}><WIcon/>
   <div style={{display:'flex', flexDirection:'column', marginRight:30, }}>
-    <h1 style={{textAlign:'end', }}>واعِ</h1>
-    <h5 style={{textAlign:'end', marginTop:0}}>بأهمية خصوصية في <br/>سعالم الانترنت</h5>
+    <h1 style={{textAlign:'end', fontFamily:'cairo' }}>واعِ</h1>
+    <h5 style={{textAlign:'end', marginTop:0 , fontFamily:'cairo'}}>بأهمية خصوصية في <br/>سعالم الانترنت</h5>
   </div></div>
     <div style={{width:'25%', flexDirection:'row-reverse', display:'flex',justifyContent:'center', }}>
   <SIcon/>
   <div style={{display:'flex', flexDirection:'column', marginRight:30,  }}>
-    <h1 style={{textAlign:'end', }}>سريع</h1>
-    <h5 style={{textAlign:'end', marginTop:0}}>في تلقي المعلومات<br/> والاستفادة منها</h5>
+    <h1 style={{textAlign:'end',  fontFamily:'cairo'}}>سريع</h1>
+    <h5 style={{textAlign:'end', marginTop:0 , fontFamily:'cairo'}}>في تلقي المعلومات<br/> والاستفادة منها</h5>
   </div>
 
     </div>
@@ -103,9 +107,9 @@ function App() {
   {/* componant 3 */}
   <div style={{width:'100%', height:300,  flexDirection:'row-reverse', display:'flex',justifyContent:'center',marginTop:120, }}>
   <div style={{width:'50%',marginTop:160}}>
-  <h1 style={{textAlign:'center', }}>الخصوصية</h1>
-  <h2 style={{textAlign:'center',marginTop:-20 }}>في عالم الانترنت</h2>
-  <h5 style={{textAlign:'center', marginTop:-10}}>كل شيء تفعله على جهازك اليوم مثل البحث عن طريقة عمل أكله معينه<br/> 
+  <h1 style={{textAlign:'center', fontFamily:'cairo' }}>الخصوصية</h1>
+  <h2 style={{textAlign:'center',marginTop:-20, fontFamily:'cairo' }}>في عالم الانترنت</h2>
+  <h5 style={{textAlign:'center', marginTop:-10, fontFamily:'cairo'}}>كل شيء تفعله على جهازك اليوم مثل البحث عن طريقة عمل أكله معينه<br/> 
   أو اللعب يعتبر بيانات شخصية تستفيد منها الشركات و تمثل أرباح للمجرمين<br/> 
   لذلك يجب توعية الاطفال عن ماهي الخصوصية في عالم الانترنت وكيف يحافظون<br/>
   على خصوصيتهم</h5>
@@ -114,7 +118,7 @@ function App() {
   
   <div style={{width:'50%' ,  display:'flex', justifyContent:'center', paddingLeft:200 }}>
       
-       <div style={{width: 400, height:200, background:'white',marginTop: 20, borderRadius: 6,  boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)', }}></div>
+       <div style={{width: 400, height:200, background:'white',marginTop: 20, borderRadius: 6,  borderWidth: 8,   boxShadow: ' -60px 59px 321px -29px rgba(247,149,110,0.75)' }}></div>
        <div style={{ position:"absolute",
     zIndex:10, marginTop:-20}}>
       <AirplaneIcon/>
@@ -123,8 +127,9 @@ function App() {
 
   </div>
   
+
   </div>
-  <button style={{width:250, height: 80,  marginLeft: 120, background:'#4BBD9B', color:'white', borderColor:'#4BBD9B', borderRadius:12,  fontSize:20, boxShadow: '-2px 1px 20px #4BBD9B' }}> تعلم في بيئة ممتعة</button>
+  <button style={{width:250, height: 80,  marginLeft: 120, background:'#4BBD9B', color:'white', borderColor:'#4BBD9B', borderRadius:12,  fontSize:20, boxShadow: '-2px 1px 20px #4BBD9B' , fontFamily:'cairo'}}> تعلم في بيئة ممتعة</button>
   
   {/* componant 4*/}
   <div style={{width:'full',flexDirection:'row-reverse', display:'flex',justifyContent:'center', alignItems:"center", justifyItems:"center", marginTop:150, }}>
@@ -141,7 +146,7 @@ function App() {
     }}>
     <h5 style={{
       textAlign:"center",
-
+       fontFamily:'cairo'
     }}>
 لعبة تفاعلية تتكون من 3 مراحل في كل مرحلة يتعلم الطفل طريقة للحفاظ على خصوصيته في عالم الانترنت، في بيئة مليئة بالتحدي والمرح، و تكون اللعبة في إطار مستقبلي.
     </h5>
@@ -150,7 +155,7 @@ function App() {
   </div>
   {/* componant 5*/}
   <div>
-  <h1 style={{textAlign:'center', marginTop:150, width:'auto', height:'auto'}}>فريق العمل</h1>
+  <h1 style={{textAlign:'center', marginTop:150, width:'auto', height:'auto' , fontFamily:'cairo'}}>فريق العمل</h1>
 
   <div style={{
     width:"100%",
@@ -180,7 +185,7 @@ function App() {
 
                     <TeamContainer img={Raghad} name = {"رغد الحربي"} title={"مهندسة برمجيات"} desc=  {"تعمل رغد كمديرة منتج في شركة تراكيب، وركزت خلال فترة دراستها على تعلم تجربة المستخدم وإدارة المنتجات، والبرمجة، و تأسيس الشركات"}/>
 
-                        <TeamContainer name = {"د.مها الجهني"} title={"مشرفة المشروع"} desc=  {"استاذ مساعد في قسم هندسة البرمجيات، ونائب المشرف على مركز التحول الرقمي بجامعة جدة"}/>
+                        <TeamContainer img={Maha} name = {"د.مها الجهني"} title={"مشرفة المشروع"} desc=  {"استاذ مساعد في قسم هندسة البرمجيات، ونائب المشرف على مركز التحول الرقمي بجامعة جدة"}/>
 
 
 
@@ -189,14 +194,14 @@ function App() {
   <div style={{ height: 200,   boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)', flexDirection:"row-reverse", display:'flex', padding:20
 }}>
   <div style={{display:'flex', flexDirection:'column'}}>
-  <h4 style={{marginTop:20, textAlign: 'right', color:'#36B5B0'}}> من نحن؟</h4>
-  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0'}}> مميزاتنا</h4>
-  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0'}}> فيديو</h4>
-  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0'}}> فريق العمل</h4>
+  <h4 style={{marginTop:20, textAlign: 'right', color:'#36B5B0', fontFamily:'cairo'}}> من نحن؟</h4>
+  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0', fontFamily:'cairo'}}> مميزاتنا</h4>
+  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0', fontFamily:'cairo'}}> فيديو</h4>
+  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0', fontFamily:'cairo'}}> فريق العمل</h4>
   </div>
   <div style={{display:'flex', flexDirection:'column', marginRight: 100}}>
-  <h4 style={{marginTop:20, textAlign: 'right', color:'#36B5B0'}}> مجتمعنا</h4>
-  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0'}}> السياسة</h4>
+  <h4 style={{marginTop:20, textAlign: 'right', color:'#36B5B0', fontFamily:'cairo'}}> مجتمعنا</h4>
+  <h4 style={{marginTop:0, textAlign: 'right',color:'#36B5B0', fontFamily:'cairo'}}> السياسة</h4>
   </div>
  
 </div>

@@ -1205,6 +1205,11 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fontsource/cairo@^4.5.12":
+  "integrity" "sha512-DAt0cZFb5cNJjmVb5pdIEQgD/kDlFASr6AxO55BwnFFj3AN19oOmMHQyKDTA7Uz5HAs2xkJygh8FHxKTboBmmw=="
+  "resolved" "https://registry.npmjs.org/@fontsource/cairo/-/cairo-4.5.12.tgz"
+  "version" "4.5.12"
+
 "@humanwhocodes/config-array@^0.11.6":
   "integrity" "sha512-jJr+hPTJYKyDILJfhNSHsjiwXYf26Flsz8DvNndOsHs5pwSnpGUEy8yzF0JYhCEvTDdV2vuOK5tt8BVhwO5/hg=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.6.tgz"
