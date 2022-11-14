@@ -24,11 +24,6 @@ const SIcon = (props) => (
         fill="#fff"
       />
     </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0h120v100H0z" />
-      </clipPath>
-    </defs>
   </svg>
 )
 

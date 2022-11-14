@@ -9,7 +9,7 @@ const RIcon = (props) => (
     {...props}
   >
     <g clipPath="url(#a)">
-      <path fill="#fff" d="M0 0h120v100H0z" />
+      <path  d="M0 0h120v100H0z" />
       <ellipse
         cx={60}
         cy={50}
@@ -24,11 +24,7 @@ const RIcon = (props) => (
         fill="#fff"
       />
     </g>
-    <defs>
-      <clipPath id="a">
-        <path fill="#fff" d="M0 0h120v100H0z" />
-      </clipPath>
-    </defs>
+ 
   </svg>
 )
 
