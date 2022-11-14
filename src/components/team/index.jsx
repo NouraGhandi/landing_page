@@ -1,11 +1,8 @@
 import React from 'react'
-import Learn_btn from '../../assets/icons/Learn_btn'
 import Twitter from '../../assets/icons/Twitter'
 
 const TeamContainer = ({name,title,desc,img,url})=> {
-    const openInNewTab = url => {
-        window.open(url, '_blank', 'noopener,noreferrer');
-      };
+
     return(
       <div style={{width:"200px", height:500, display:"flex", flexDirection:"column", background:'#fff',
     padding:20, boxSizing:"border-box", justifyContent:"space-between", borderRadius:20,
