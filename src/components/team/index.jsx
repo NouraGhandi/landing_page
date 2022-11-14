@@ -57,7 +57,7 @@ const TeamContainer = ({name,title,desc,img,url})=> {
                       justifyContent:"center"
 
                   }}>
-          <div onClick={() => openInNewTab("www.google.com")}  style={{ width:40, height:40}}>
+          <div   style={{ width:40, height:40}}>
           <Twitter  curser={"pointer"}/>
           </div>
                      
