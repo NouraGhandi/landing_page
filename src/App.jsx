@@ -18,7 +18,7 @@ import AirplaneIcon from "./assets/icons/AirplaneIcon";
 import "@fontsource/cairo";
 import "./index.css";
 function App() {
-
+// eslint-disable-next-line
 const [width, setWidth]   = useState(window.innerWidth);
 // const [height, setHeight] = useState(window.innerHeight);
 const updateDimensions = () => {
