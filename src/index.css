@@ -29,3 +29,41 @@ a:visited {
 html{
   scroll-behavior: smooth;
 }
+
+
+@media only screen and (min-width: 400px) and (max-width: 1000px)  {
+  .text-container {
+    margin:0 !important;
+    text-align:center !important;
+  }
+
+  .text-container a {
+    text-align: center!important;
+    font-size: 14px !important;
+  }
+
+  .main_text {
+    margin:0 !important;
+    margin-top: 250px !important;
+    margin-left: 20px !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    text-align: center !important;
+    width:100% !important;
+    
+    }
+
+  .main_text button {
+        margin:0 !important;
+  }
+
+  #try {
+    text-align: center;
+  }
+
+  .button-main {
+    align-items: center !important;
+    text-align:center !important;
+    justify-content: center !important;
+  }
+}

@@ -1,67 +1,89 @@
-import React from 'react'
-import Twitter from '../../assets/icons/Twitter'
+import React from "react";
+import Twitter from "../../assets/icons/Twitter";
 
-const TeamContainer = ({name,title,desc,img,url})=> {
-
-    return(
-      <div style={{width:"200px", height:500, display:"flex", flexDirection:"column", background:'#fff',
-    padding:20, boxSizing:"border-box", justifyContent:"space-between", borderRadius:20,
-     boxShadow: '-1px 1px 15px rgba(0, 0, 0, 0.25)',
-    }}>
+const TeamContainer = ({ name, title, desc, img, url }) => {
+  return (
+    <div
+      style={{
+        width: "200px",
+        height: 500,
+        display: "flex",
+        flexDirection: "column",
+        background: "#fff",
+        padding: 20,
+        boxSizing: "border-box",
+        justifyContent: "space-between",
+        borderRadius: 20,
+        boxShadow: "-1px 1px 15px rgba(0, 0, 0, 0.25)",
+      }}
+    >
       <div>
-          <img style={{
-          width:"120px",
-          height:"120px",
-          background:'#fff',
-          alignSelf:"center",
-          borderRadius:"50%",
-        //   boxShadow: '1px' ,
-     boxShadow: '-2px 1px 20px rgba(0, 0, 0, 0.25)',
-
-      }} src = {img} 
-      alt={""}
-      />
+        <img
+          style={{
+            width: "120px",
+            height: "120px",
+            background: "#fff",
+            alignSelf: "center",
+            borderRadius: "50%",
+            //   boxShadow: '1px' ,
+            boxShadow: "-2px 1px 20px rgba(0, 0, 0, 0.25)",
+          }}
+          src={img}
+          alt={""}
+        />
       </div>
 
-            <div style={{
-                display:'flex',
-                flexDirection:"column",
-                alignItems:"center",
-                justifyContent:"flex-start"
-            }}>
-        <text style={{
-            fontSize:"20px",
-            fontWeight:"bold",
-             fontFamily:'cairo'
-        }}>{name}</text>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-start",
+        }}
+      >
+        <text
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            fontFamily: "cairo",
+          }}
+        >
+          {name}
+        </text>
 
-        <text  style={{
-            fontSize:"20px",
-            marginTop:"10px"
-            , fontFamily:'cairo'
-        }}>{title}</text>
-        <p style={{
-            fontSize:"10px",
-            marginTop:"10px"
-            , fontFamily:'cairo'
-        }}>{desc}</p>
+        <text
+          style={{
+            fontSize: "20px",
+            marginTop: "10px",
+            fontFamily: "cairo",
+          }}
+        >
+          {title}
+        </text>
+        <p
+          style={{
+            fontSize: "10px",
+            marginTop: "10px",
+            fontFamily: "cairo",
+          }}
+        >
+          {desc}
+        </p>
       </div>
 
-                  <div style={{
-                      display:"flex",
-                      flexDirection:"row",
-                      alignItems:"center",
-                      justifyContent:"center"
-
-                  }}>
-          <div   style={{ width:40, height:40}}>
-          <Twitter  curser={"pointer"}/>
-          </div>
-                     
-    
-
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div style={{ width: 40, height: 40 }}>
+          <Twitter curser={"pointer"} />
+        </div>
       </div>
     </div>
-    )
-}
-export default TeamContainer
+  );
+};
+export default TeamContainer;
