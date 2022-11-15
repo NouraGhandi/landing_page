@@ -35,6 +35,7 @@ html{
   .text-container {
     margin:0 !important;
     text-align:center !important;
+
   }
 
   .text-container a {
@@ -44,7 +45,7 @@ html{
 
   .main_text {
     margin:0 !important;
-    margin-top: 250px !important;
+    margin-top: 100px !important;
     margin-left: 20px !important;
     text-align: center !important;
     font-size: 40px !important;

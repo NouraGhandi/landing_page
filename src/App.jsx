@@ -30,20 +30,38 @@ useEffect(() => {
     return () => window.removeEventListener("resize", updateDimensions);
 }, [])
 
-// const render_background = ()=> {
-// if(width >= 1000) {
-//   return <Background/>
-// } else {
-//   return <></>
-// }
-// }
+const render_background = ()=> {
+if(width >= 1000) {
+  return <Background/>
+} else {
+  return <>
+        <svg width="100%" height="410" viewBox="0 0 390 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.59513 51H394.595V342C302.095 453.5 -28.4006 230.532 -5.90485 342L4.59513 51Z" fill="url(#paint0_linear_2_4)"/>
+<path d="M-2.67029e-05 0H390V291C297.5 402.5 -32.9957 179.532 -10.5 291L-2.67029e-05 0Z" fill="url(#paint1_linear_2_4)"/>
+<defs>
+<linearGradient id="paint0_linear_2_4" x1="682.595" y1="-74" x2="24.5951" y2="440" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F47D83" stop-opacity="0.6"/>
+<stop offset="0.484234" stop-color="#F7956E" stop-opacity="0.6"/>
+<stop offset="0.958901" stop-color="#FDD456" stop-opacity="0.6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2_4" x1="678" y1="-125" x2="20" y2="389" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2A0959"/>
+<stop offset="0.0001" stop-color="#FF6B6B"/>
+<stop offset="0.484234" stop-color="#F7956E"/>
+<stop offset="0.958901" stop-color="#FDD456"/>
+</linearGradient>
+</defs>
+</svg></>
+}
+}
 
 
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      {/* {render_background()} */}
-      <Background/>
-  
+      {render_background()}
+
+      {/* <Background/> */}
+  {/* <img src="./assets/bg.svg" width='300' height="200"/> */}
       <div
         style={{
           position: "absolute",
