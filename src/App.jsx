@@ -361,7 +361,6 @@ useEffect(() => {
           justifyItems: "center",
           marginTop: 0,
           flexWrap: "wrap",
-          marginTop:200
         }}
       >
         <div
